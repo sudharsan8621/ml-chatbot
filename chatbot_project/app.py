@@ -4,6 +4,7 @@ import pickle
 import random
 import numpy as np
 import nltk
+import os
 from nltk.stem import WordNetLemmatizer
 
 # Download NLTK data
@@ -14,14 +15,19 @@ nltk.download('wordnet')
 # Initialize
 lemmatizer = WordNetLemmatizer()
 
+# Get the directory where app.py is located
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 # Load intents
-with open('data/intents.json', encoding='utf-8') as file:
+intents_path = os.path.join(BASE_DIR, 'data', 'intents.json')
+with open(intents_path, encoding='utf-8') as file:
     intents = json.load(file)
 
-words = pickle.load(open('model/words.pkl', 'rb'))
-classes = pickle.load(open('model/classes.pkl', 'rb'))
-label_encoder = pickle.load(open('model/label_encoder.pkl', 'rb'))
-model = pickle.load(open('model/chatbot_model.pkl', 'rb'))
+# Load model files
+words = pickle.load(open(os.path.join(BASE_DIR, 'model', 'words.pkl'), 'rb'))
+classes = pickle.load(open(os.path.join(BASE_DIR, 'model', 'classes.pkl'), 'rb'))
+label_encoder = pickle.load(open(os.path.join(BASE_DIR, 'model', 'label_encoder.pkl'), 'rb'))
+model = pickle.load(open(os.path.join(BASE_DIR, 'model', 'chatbot_model.pkl'), 'rb'))
 
 def clean_sentence(sentence):
     sentence_words = nltk.word_tokenize(sentence)
