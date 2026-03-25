@@ -1,0 +1,104 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Hey", "Good morning", "Good afternoon", "Good evening", "What's up", "Howdy", "Hi there"],
+      "responses": ["Hello! How can I help you today?", "Hi there! What can I do for you?", "Hey! Nice to meet you!"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "Goodbye", "See you", "Take care", "See you later", "Bye bye", "Good night"],
+      "responses": ["Goodbye! Have a great day!", "See you later! Take care!", "Bye! Come back soon!"]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks a lot", "Thank you so much"],
+      "responses": ["You're welcome!", "Happy to help!", "Anytime! Feel free to ask more."]
+    },
+    {
+      "tag": "name",
+      "patterns": ["What is your name?", "Who are you?", "Your name?", "What should I call you?"],
+      "responses": ["I'm ShopBot, your shopping assistant!", "Call me ShopBot!", "I'm ShopBot - your friendly AI assistant!"]
+    },
+    {
+      "tag": "help",
+      "patterns": ["Help me", "I need help", "Can you help?", "Support", "I have a problem"],
+      "responses": ["Sure! What do you need help with?", "I'm here to help! Tell me your concern.", "Of course! How can I assist you today?"]
+    },
+    {
+      "tag": "products",
+      "patterns": ["What products do you have?", "Show products", "Product list", "What do you sell?", "Available items", "What can I buy?"],
+      "responses": ["We have Phones, Laptops, Cameras, Headphones, Smartwatches!", "Our products: Phones, Laptops, Tablets, Cameras, Accessories!"]
+    },
+    {
+      "tag": "phones",
+      "patterns": ["Show phones", "Mobile phones", "Smartphones available", "I want a phone", "Phone models", "Best phones"],
+      "responses": ["Phones: iPhone 15, Samsung S24, OnePlus 12 available!", "We have iPhone, Samsung, OnePlus, Pixel phones."]
+    },
+    {
+      "tag": "laptops",
+      "patterns": ["Show laptops", "Laptops available", "I want a laptop", "Best laptops", "Laptop models", "Gaming laptop"],
+      "responses": ["Laptops: MacBook Air, Dell XPS, HP Pavilion available!", "We have MacBook, Dell, HP, Lenovo laptops."]
+    },
+    {
+      "tag": "price",
+      "patterns": ["What is the price?", "How much?", "Cost?", "Pricing", "What's the rate?", "Tell me the price"],
+      "responses": ["Prices vary by product. Which item are you interested in?", "Please specify the product for exact pricing."]
+    },
+    {
+      "tag": "discount",
+      "patterns": ["Any discount?", "Offers available?", "Coupon code", "Sale going on?", "Best deal", "Special offer"],
+      "responses": ["Use code SAVE10 for 10% off on all products!", "Current offer: Buy 2 Get 10% off! Use code: COMBO10"]
+    },
+    {
+      "tag": "order",
+      "patterns": ["How to order?", "Place order", "Buy now", "Order process", "I want to buy", "Add to cart", "Purchase"],
+      "responses": ["Easy! Select product, Add to cart, Checkout, Pay and Done!", "You can order on our website or app."]
+    },
+    {
+      "tag": "payment",
+      "patterns": ["Payment methods?", "How to pay?", "UPI accepted?", "Card payment?", "Cash on delivery?", "EMI available?"],
+      "responses": ["We accept: UPI, Credit/Debit Cards, Net Banking, Cash on Delivery", "Payment options: Google Pay, PhonePe, Cards, COD, EMI available!"]
+    },
+    {
+      "tag": "delivery",
+      "patterns": ["Delivery available?", "Home delivery?", "Shipping?", "How long for delivery?", "Delivery time", "Free delivery?"],
+      "responses": ["Free delivery within 2-3 business days!", "Yes! Free home delivery. Express delivery available."]
+    },
+    {
+      "tag": "tracking",
+      "patterns": ["Track my order", "Where is my order?", "Order status", "Tracking number", "When will I receive?"],
+      "responses": ["Please share your order ID, I'll check the status for you.", "You can track on our website in Track Order section."]
+    },
+    {
+      "tag": "return",
+      "patterns": ["Return policy?", "Can I return?", "Refund?", "Exchange?", "Product damaged", "Wrong item received"],
+      "responses": ["Easy 7-day return policy! Full refund if not satisfied.", "Returns accepted within 7 days. Refund in 3-5 business days."]
+    },
+    {
+      "tag": "hours",
+      "patterns": ["What are your hours?", "When are you open?", "Working hours?", "Timing?", "Store timings"],
+      "responses": ["We're open 9 AM to 9 PM, Monday to Saturday!", "Store hours: 9 AM - 9 PM. Online support 24/7!"]
+    },
+    {
+      "tag": "location",
+      "patterns": ["Where are you located?", "Your address?", "Location?", "Where is your shop?", "Store address"],
+      "responses": ["123 Tech Street, Anna Nagar, Chennai - 600040", "We're in Chennai! Also shop online at www.shopbot.com!"]
+    },
+    {
+      "tag": "contact",
+      "patterns": ["Contact number", "Phone number", "How to contact?", "Customer care", "Support number", "Email address"],
+      "responses": ["Call: 1800-123-4567 (Toll Free) Email: support@shopbot.com", "Contact us: Phone - 1800-123-4567 WhatsApp - 9876543210"]
+    },
+    {
+      "tag": "warranty",
+      "patterns": ["Warranty available?", "Guarantee?", "Warranty period", "Product warranty", "How long warranty?"],
+      "responses": ["All products come with 1-year manufacturer warranty!", "1-year warranty on all electronics. Extended warranty available."]
+    },
+    {
+      "tag": "complaint",
+      "patterns": ["I have a complaint", "Bad experience", "Not satisfied", "Poor service", "Want to complain"],
+      "responses": ["I'm sorry to hear that. Please share details, I'll help resolve it.", "We apologize! Tell me what went wrong."]
+    }
+  ]
+}
